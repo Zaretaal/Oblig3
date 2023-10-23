@@ -1,1 +1,142 @@
+#header { /*øverste svarte kolonnen*/
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    text-align:center;
+    background-color:black;
+    padding: 0;
+}
+li a { /*teksten inn i svarte kolonnen av header*/
+    display:grid;
+    color:white;
+    font-size: medium;
+}
+body nav{
+    display:grid;
+    text-align:center;
+
+}
+input{
+    display:grid;
+    text-align:center;
+}
+nav.search_bar{ /*søkefeltet*/
+    display:grid;
+}
+
+#meny { /* header, svarte kolonnen med hvit tekst*/
+    list-style: none;
+    padding: 0;
+}
+
+#menu li{
+    display: inline;
+    margin: 0 20px;
+    padding: 0;
+}
+header nav {
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+header nav div{
+    display: grid;
+    gap: 1rem;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    color:black
+    
+}
+
+ul header{
+    display:inline-block;
+    margin-right: 100px;
+}
+.img{
+    display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+}
+a { /*a for artikkel ment i bruk for kategorier av herre, kvinne osv. Brukte teksstil nevnt under i svart farge*/
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+h4{ 
+    color:black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{  
+    color: black;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p { /* beholdt samme tekststil og fargen  svart, plasserte dem i midten under overskriftene*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}
+main{ /*ment for å plassere dem i grid kolonner*/
+    display:grid;
+
+}
+#grid-container{
+    display:grid;
+    grid-template-areas: "header" "main" "footer";
+}
+.products{ /*plasserte bildene fra placeholder i midten sammen med inline block for en rett rekkefølge*/
+    display:inline-block;
+    text-align: center;
+    
+}
+footer{  /*lagde en footer identisk til header, untatt med tekst*/
+    grid-area: footer;
+    color: white;
+    background-color:black;
+}
+@media only screen and (min-width:600px) { /*mobile versjon*/
+    nav.search_bar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: none;
+    }
+    .flex-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-section img{
+        width: 50%;
+    }
+    .flex-section section{
+        width: 50%;
+        align-self: center;
+    }
+    .right img{
+        order:1;
+    }
+}
+
+
+
+
+
+
 
