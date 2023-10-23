@@ -2,14 +2,15 @@
     display:grid;
     grid-template-columns: 4fr 4fr 4fr;
     text-align:center;
-    background-color:black;
+    background-color:gray;
     padding: 0;
 }
 li a { 
     display:grid;
-    color:white;
+    color:black;
     font-size: medium;
 }
+
 body nav{
     display:grid;
     text-align:center;
@@ -106,10 +107,12 @@ main{
     
 }
 footer{  
+    margin-top: 280px;
     grid-area: footer;
     color: white;
-    background-color:black;
+    background-color:gray;
 }
+
 @media only screen and (min-width:600px) { 
     nav.search_bar{
         display: flex;
